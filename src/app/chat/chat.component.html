@@ -1,0 +1,28 @@
+<div id="container">
+    <div id="header">
+        <div class="avatarSection">
+            <div class="picture">
+                <img width="45" src="../../assets/noPic.svg" />
+            </div>
+            <div class="nameSection">Ramesh</div>
+        </div>
+        <div class="actionButtons">
+            <img src="../../assets/attached.svg" />
+            <img src="../../assets/moreVertIcon.svg" />
+        </div>
+    </div>
+    <div id="body">
+        <div class="message" *ngFor="let message of conversations">
+            <div *ngFor="let msg of message.messages">
+                {{msg.body}}Ramesh Sakhare
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="smileIcon"> <img width="30" src="../../assets/smileIcon.svg" alt=""></div>
+        <div id="textarea">
+            <textarea name="" id=""></textarea>
+        </div>
+        <div id="micIcon"><img width="30" src="../../assets/voiceIcon.svg" alt=""></div>
+    </div>
+</div>
