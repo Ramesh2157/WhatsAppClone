@@ -9,13 +9,20 @@ import { ChatService } from '../chat.service';
 export class ChatComponent implements OnInit {
   @Input() conversation;
   conversations: any;
+  messages: any;
   name: any;
+  me: any;
+  message = '';
   constructor(public chat: ChatService) {
     this.conversations = this.chat.getChat().conversations;
     // this.name = this.chat.getName().name;
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
+
+
+
+
+
 
 }

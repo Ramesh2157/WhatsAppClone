@@ -15,7 +15,7 @@ export class SidebarComponent implements OnInit {
 
   chatClick(name: any) {
     this.chat.getName().name = name;
-    // console.log(this.chat.getName().name)
+    console.log(this.chat.getName().name)
   }
 
   ngOnInit(): void {

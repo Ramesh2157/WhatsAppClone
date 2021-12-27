@@ -10,7 +10,7 @@ export class ChatService {
   getName() {
     return {
       name: ''
-    }
+    } 
   }
 
   getChat() {
