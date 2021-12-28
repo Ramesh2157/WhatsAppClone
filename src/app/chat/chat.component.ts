@@ -15,10 +15,12 @@ export class ChatComponent implements OnInit {
   message = '';
   constructor(public chat: ChatService) {
     this.conversations = this.chat.getChat().conversations;
-    // this.name = this.chat.getName().name;
+    
+    this.name = this.chat.getName().name;
   }
 
   ngOnInit(): void { }
+  
 
 
 

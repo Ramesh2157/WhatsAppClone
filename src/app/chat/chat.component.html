@@ -12,19 +12,20 @@
         </div>
     </div>
     <div id="body">
-        <div class="message" *ngFor="let message of conversations">
-            <div class="messageContent" *ngFor="let msg of message.messages">
-                <div class="" [ngClass]="{ me: msg.me }">
+        <div class="message" [ngClass]="{ me:messages.me }" *ngFor="let message of conversations">
+            <div class="messageContent"  *ngFor="let msg of message.messages">
+                <div >
                     {{msg.body}}
                     <div class="time">{{msg.time}}</div>
                 </div>
+                
             </div>
         </div>
     </div>
     <div id="footer">
         <div id="smileIcon"> <img width="30" src="../../assets/smileIcon.svg" alt=""></div>
         <div id="textarea">
-            <textarea></textarea>
+            <textarea ></textarea>
         </div>
         <div id="micIcon"><img width="30" src="../../assets/voiceIcon.svg" alt=""></div>
     </div>
