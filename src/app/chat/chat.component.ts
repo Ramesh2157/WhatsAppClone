@@ -20,6 +20,20 @@ export class ChatComponent implements OnInit {
   }
 
   ngOnInit(): void { }
+
+  submitMessage(event){
+  let value= event.target.value;
+  event.target.value ='';
+
+  this.conversations.messages.unshift({
+    id: 1,
+    body: value,
+    time: '10:20',
+    me:true,
+    
+  })
+
+  }
   
 
 
